@@ -1,0 +1,128 @@
+body {
+    background-color: $off-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $ff;
+
+}
+.card {
+    background-color: $white;
+    border-radius: 1rem 1rem 7rem 1rem;
+
+    .inputs {
+        display: flex;
+        padding: 2rem 1.5rem 0 1.5rem;
+
+        :nth-child(2) {
+            padding: 0 1rem;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-weight: $fw-bold;
+                font-size: 0.7rem;
+                letter-spacing: 0.15rem;
+                color: $smokey-grey;
+
+            }
+
+            .err-label {
+                color: red;
+            }
+
+            .err-border {
+                border: 1px solid red;
+            }
+
+            input {
+                max-width: 6rem;
+                min-height: 2.5rem;
+                border-radius: 0.3rem;
+                border: 1px solid rgba(128, 128, 128, 0.5);
+                outline: none;
+                font-size: 1.5rem;
+
+                &:focus {
+                    border: 1px solid $purple;
+                    color:$purple;
+                }
+
+                + p {
+                    color: red;
+                    font-size: 10px;
+                    font-style: italic;
+                    padding-top: .2rem;
+
+                }
+            }
+        }
+    }
+
+    .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1.5rem ;
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $purple;
+            border-radius: 50%;
+            width:$wh-circle;
+            height: $wh-circle;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $off-black;
+            }
+
+            img {
+                padding: .6rem;
+            }
+        }
+
+        hr {
+            height: 1px;
+            width: 35%;
+            background-color: hsla(0, 0%, 50%, 0.3);
+            border: 0;
+        }
+    }
+
+    .result {
+        padding: 0 1.5rem 2rem 1.5rem;
+        line-height: 4rem;
+
+        > p {
+            font-weight: 900;
+            font-style: italic;
+            font-size: 4rem;
+
+            > span {
+                color: $purple;
+                letter-spacing: 0.4rem;
+            }
+        }
+    }
+}
+
+
+@media  screen and (min-width:600px) {
+    .card {
+        width: 28rem;
+
+        .submit {
+            :nth-child(2) { order: 3;}
+
+            hr {
+                width: 45%;
+            }
+        }
+    }
+}

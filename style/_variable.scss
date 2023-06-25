@@ -1,0 +1,33 @@
+@font-face {
+    font-family:"Poppins",sans-serif;
+    src: url("../assets/fonts/Poppins-Regular.ttf") format(truetype),
+    url("../assets/fonts/Poppins-Italic.ttf") format(truetype),
+    url("../assets/fonts/Poppins-Bold.ttf) format(truetype"),
+    url("../assets/fonts/Poppins-ExtraBoldItalic.ttf") format(truetype);
+font-weight: 400 700 800;
+font-style: normal;
+}
+
+$purple: hsl(259, 100%, 65%);
+$light-red: hsl(0, 100%, 67%);
+
+//Neutral
+
+$white: hsl(0, 0%, 100%);
+$off-white: hsl(0, 0%, 94%);
+$light-grey: hsl(0, 0%, 86%);
+$smokey-grey: hsl(0, 1%, 44%);
+$off-black: hsl(0, 0%, 8%);
+
+//Typography
+
+$font-size-inputs: 2rem;
+$fw-normal:400;
+$fw-bold:700;
+$fw-extra-bold:800;
+$ff:"Poppins",sans-serif;
+$wh-circle:3rem;
+
+
+
+
